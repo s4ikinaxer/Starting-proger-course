@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+
+var game = [];
+var rounds = parseInt(prompt("Введите число раундов: "));
+var n = 0;
+var round_counter = 0;
+var max_length = 0;
+var length = 0;
+
+for (round_counter=0; round_counter<=rounds; round_counter++) {
+	n = Math.round(Math.random()*36);
+	if (n != 0) {
+		n = (n % 2) * 2 - 1;
+	}
+	game.push(n);
+}
+
+alert(game);
+
+</script>

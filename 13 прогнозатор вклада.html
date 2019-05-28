@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script>
+
+var money = parseInt (prompt("Введите сумму вклада, руб:"));
+var year = parseInt (prompt("Введите срок вклада, лет:"));
+var percent = parseInt (prompt("Процентная ставка, %:"));
+
+for (var n = 1; n <= year; n++) {
+	money = money + (money / 100 * percent);
+	alert("Прошло " + n + " лет (года)." + " Сумма счета: " + Math.floor(money) + " руб.");
+}
+
+</script>
